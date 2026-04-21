@@ -35,6 +35,7 @@ watch:
 
 plugins:
   - search
+  - awesome-pages
   - mermaid-to-svg:
       enabled_if_env: RENDER_SVG
       image_id_enabled: true
@@ -49,10 +50,10 @@ plugins:
   - svg-to-png:
       enabled_if_env: RENDER_PNG
   - to-pdf:
-      cover_subtitle: 'ドキュメンテーション戦略'
+      cover_subtitle: '生成AI時代のドキュメント基盤'
       toc_title: 目次
       toc_level: 3
-      output_path: pdf/ドキュメンテーション戦略.pdf
+      output_path: pdf/生成AI時代のドキュメント基盤.pdf
       enabled_if_env: ENABLE_PDF
   - table-reader:
       enabled: true

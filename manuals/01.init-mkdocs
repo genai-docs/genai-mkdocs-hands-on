@@ -15,3 +15,9 @@ uv sync
 ```bash
 uv run mkdocs serve --livereload
 ```
+
+## 5. PDFのビルド
+
+```bash
+RENDER_SVG=1 RENDER_PNG=1 ENABLE_PDF=1 uv run mkdocs build
+```
