@@ -22,11 +22,11 @@
 
 ## WSL で VS Code から利用する
 
-前提:
+前提：
 
 - Dockerが利用できる環境
 - VS Code
-- VS Code 拡張 `Dev Containers`
+- VS Code拡張 `Dev Containers`
 
 手順（WSL）:
 
@@ -37,13 +37,13 @@
    git clone https://github.com/your-username/genai-mkdocs-hands-on.git
    ```
 
-2. WSL でこのリポジトリーを開く。
+2. WSLでこのリポジトリーを開く。
 
    ```bash
    cd genai-mkdocs-hands-on
    code .
    ```
 
-3. VS Code で `Reopen in Container` を実行する。
-4. 初回起動時は `.devcontainer/devcontainer.json` に従って依存関係が自動で導入される。
+3. VS Codeで `Reopen in Container` を実行する。
+4. 初回起動時は `.devcontainer/devcontainer.json` にしたがって依存関係が自動で導入される。
 
