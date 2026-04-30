@@ -1,0 +1,16 @@
+# システム設定ファイル（Claude Code / GitHub Copilot用）
+CLAUDE.md
+AGENTS.md
+
+# ビルド出力
+site/
+
+# 依存関係はlint対象外
+node_modules/**
+
+# スライド（Marp）はlint対象外
+docs/スライド/**
+
+# ハンズオンリソース
+reference/**
+manuals/**

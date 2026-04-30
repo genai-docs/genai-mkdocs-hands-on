@@ -25,3 +25,9 @@ plugins:
   - awesome-pages
   - table-reader:
       enabled: true
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
