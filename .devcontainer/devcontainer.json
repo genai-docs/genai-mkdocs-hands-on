@@ -1,0 +1,17 @@
+{
+  "name": "genai-mkdocs-hands-on",
+  "image": "ghcr.io/genai-docs/genai-docs-env:latest",
+  "overrideCommand": true,
+  "remoteUser": "vscode",
+  "workspaceFolder": "/home/vscode/workspace/genai-mkdocs-hands-on",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/workspace/genai-mkdocs-hands-on,type=bind,consistency=cached",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "forwardPorts": [
+    8000
+  ],
+  "portsAttributes": {
+    "8000": {
+      "label": "MkDocs & Marp"
+    }
+  }
+}

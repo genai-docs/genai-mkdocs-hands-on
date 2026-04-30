@@ -1,17 +1,49 @@
 # genai-mkdocs-hands-on
 
-## ハンズオン準備
+## ハンズオン手順
 
-配布されたcode-server（ブラウザ版VS Code）上で、ハンズオンを始める前に済ませておく一連のセットアップ手順をまとめる。
+1. [VS Code (code-server) の初期化](manuals/01.vscode.md)
+2. [GitHub リポジトリの準備](manuals/02.github.md)
+3. [MkDocs の利用](manuals/03.mkdocs.md)
+4. [textlint を活用する](manuals/04.textlint.md)
+5. [Pull Request を送る](manuals/05.pull_request.md)
+6. [PDF 化する](manuals/06.pdf.md)
+7. [Mermaid 記法](manuals/07.mermaid.md)
+8. [Marp によるスライドの作成](manuals/08.marp.md)
+9. [.pagesファイルによるナビゲーション指定](manuals/09.pages.md)
 
-### 手順の全体像
 
-1. [VS Code (code-server) の初期化](01.vscode.md) — Welcome画面のウィザード
-2. [GitHub リポジトリの準備](02.github.md) — Forkし、VS Code上でクローン
-3. AIエージェントのサインイン — 利用するエージェントのみ実施すればよい
-    - [Claude Code](03.claude-code.md)
-    - [Cursor CLI](04.cursor.md)
-    - [Codex CLI](05.codex.md)
-    - [GitHub Copilot CLI](06.copilot.md)
+## AIエージェントのサインイン手順
 
-<!-- CI deploy preview test: 2026-04-29T08:00:19Z -->
+- [Claude Code](03.claude-code.md)
+- [Cursor CLI](04.cursor.md)
+- [Codex CLI](05.codex.md)
+- [GitHub Copilot CLI](06.copilot.md)
+
+## WSL で VS Code から利用する
+
+前提:
+
+- Dockerが利用できる環境
+- VS Code
+- VS Code 拡張 `Dev Containers`
+
+手順（WSL）:
+
+1. WSLなどでこのリポジトリーをフォークし、クローンする
+
+   ```bash
+   cd ~
+   git clone https://github.com/your-username/genai-mkdocs-hands-on.git
+   ```
+
+2. WSL でこのリポジトリーを開く。
+
+   ```bash
+   cd genai-mkdocs-hands-on
+   code .
+   ```
+
+3. VS Code で `Reopen in Container` を実行する。
+4. 初回起動時は `.devcontainer/devcontainer.json` に従って依存関係が自動で導入される。
+
