@@ -25,14 +25,26 @@ watch:
   - mkdocs.yml
 
 plugins:
+  - search
   - awesome-pages
+  - mermaid-to-svg:
+      enabled_if_env: RENDER_SVG
+      image_id_enabled: true
+      image_id_prefix: mermaid-diagram
+      # Disable HTML labels for PDF compatibility
+      mermaid_config:
+        htmlLabels: false
+        flowchart:
+          htmlLabels: false
+        class:
+          htmlLabels: false
+  - svg-to-png:
+      enabled_if_env: RENDER_PNG
+  - to-pdf:
+      cover_subtitle: '生成AI時代のドキュメント基盤'
+      toc_title: 目次
+      toc_level: 3
+      output_path: pdf/生成AI時代のドキュメント基盤.pdf
+      enabled_if_env: ENABLE_PDF
   - table-reader:
       enabled: true
-
-plugins:
-  - search
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences

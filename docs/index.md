@@ -20,7 +20,7 @@
 - *イタリック*
 - **太字**
 - ***太字イタリック***
-- ~~取り消し線~~   ← GFM 拡張
+- ~~取り消し線~~   ← GFM拡張
 
 ## テーブル
 
@@ -68,7 +68,7 @@ public void Hello() => Console.WriteLine("Hi");
     Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, 
     nec semper lorem quam in massa.
 
-!!! 注意 danger
+!!! 注意danger
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla.
     Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, 
