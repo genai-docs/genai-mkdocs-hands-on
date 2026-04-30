@@ -1,4 +1,7 @@
 {
+  "markdown.marp.themes": [
+    "./docs/スライド/theme/marp.css"
+  ],
   "cSpell.words": [
     "claudecode",
     "codexcli",
