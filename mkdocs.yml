@@ -16,12 +16,16 @@ markdown_extensions:
   - attr_list
   - toc:
       permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 watch:
   - docs
   - mkdocs.yml
 
 plugins:
+  - search
   - awesome-pages
   - table-reader:
       enabled: true
