@@ -1,4 +1,11 @@
 {
+  "markdown.marp.themes": [
+    "./docs/スライド/theme/marp.css"
+  ],
+  "textlint.configPath": ".textlintrc.json",
+  "textlint.autoFixOnSave": false,
+  "textlint.run": "onType",
+  "chat.useAgentsMdFile": false,
   "cSpell.words": [
     "claudecode",
     "codexcli",
